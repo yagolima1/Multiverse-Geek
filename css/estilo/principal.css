@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -47,6 +46,9 @@ nav.menu {
 
 .b-home:hover {
     background-color: #ffc400;
+    transform: scale(1.1);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -60,10 +62,9 @@ main {
     text-align: center;
     color: #ffffff;
     overflow: hidden;
-    /* Certifique-se de que a sobreposição não ultrapasse os limites do contêiner */
 }
 
-.noticia-principal::before {
+.noticia-principal:before {
     content: "";
     position: absolute;
     top: 0;
@@ -74,9 +75,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.4;
-    /* Ajuste a opacidade aqui */
     z-index: -5;
-    /* Certifique-se de que a sobreposição fique atrás do conteúdo */
 }
 
 
@@ -104,6 +103,9 @@ main {
 
 .noticia-principal button:hover {
     background-color: #ffc400;
+    transform: scale(1.1);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
 }
 
 section.titulo {
@@ -143,10 +145,6 @@ section.titulo {
     display: block;
 }
 
-.noticias a:hover {
-    text-decoration: underline;
-}
-
 .noticia-item {
     transition: 0.5s;
     cursor: pointer;
@@ -168,17 +166,14 @@ footer {
     bottom: 0;
 }
 
-/* Estilos específicos para as notícias */
 .noticia-site1,
 .noticia-site2,
 .noticia-site3,
 .noticia-site4 {
     max-width: 800px;
-    /* Limita a largura para melhor visualização em telas grandes */
     margin: 0 auto;
     padding: 20px;
     background-color: #333;
-    /* Fundo para as páginas de notícia */
     border-radius: 10px;
 }
 
